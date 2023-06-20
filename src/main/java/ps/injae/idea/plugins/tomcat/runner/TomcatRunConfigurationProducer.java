@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.runner;
+package ps.injae.idea.plugins.tomcat.runner;
 
 import com.intellij.execution.Location;
 import com.intellij.execution.actions.ConfigurationContext;
@@ -13,11 +13,11 @@ import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiElement;
 import com.intellij.util.containers.ContainerUtil;
-import com.poratu.idea.plugins.tomcat.conf.TomcatRunConfiguration;
-import com.poratu.idea.plugins.tomcat.conf.TomcatRunConfigurationType;
-import com.poratu.idea.plugins.tomcat.setting.TomcatInfo;
-import com.poratu.idea.plugins.tomcat.setting.TomcatServerManagerState;
-import com.poratu.idea.plugins.tomcat.utils.PluginUtils;
+import ps.injae.idea.plugins.tomcat.conf.TomcatRunConfiguration;
+import ps.injae.idea.plugins.tomcat.conf.TomcatRunConfigurationType;
+import ps.injae.idea.plugins.tomcat.setting.TomcatInfo;
+import ps.injae.idea.plugins.tomcat.setting.TomcatServerManagerState;
+import ps.injae.idea.plugins.tomcat.utils.PluginUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

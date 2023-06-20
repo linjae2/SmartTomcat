@@ -1,9 +1,9 @@
-package com.poratu.idea.plugins.tomcat.runner;
+package ps.injae.idea.plugins.tomcat.runner;
 
 import com.intellij.execution.configurations.RunProfile;
 import com.intellij.execution.executors.DefaultRunExecutor;
 import com.intellij.execution.impl.DefaultJavaProgramRunner;
-import com.poratu.idea.plugins.tomcat.conf.TomcatRunConfiguration;
+import ps.injae.idea.plugins.tomcat.conf.TomcatRunConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /**

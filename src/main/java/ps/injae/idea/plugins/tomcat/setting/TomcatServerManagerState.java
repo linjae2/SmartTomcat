@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.setting;
+package ps.injae.idea.plugins.tomcat.setting;
 
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.components.PersistentStateComponent;
@@ -7,7 +7,7 @@ import com.intellij.openapi.components.Storage;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.util.xmlb.XmlSerializerUtil;
 import com.intellij.util.xmlb.annotations.XCollection;
-import com.poratu.idea.plugins.tomcat.utils.PluginUtils;
+import ps.injae.idea.plugins.tomcat.utils.PluginUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

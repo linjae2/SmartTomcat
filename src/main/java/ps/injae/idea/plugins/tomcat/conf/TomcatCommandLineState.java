@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.conf;
+package ps.injae.idea.plugins.tomcat.conf;
 
 import com.intellij.debugger.settings.DebuggerSettings;
 import com.intellij.execution.ExecutionException;
@@ -19,7 +19,7 @@ import com.intellij.openapi.util.io.FileUtil;
 import com.intellij.openapi.util.registry.Registry;
 import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.util.PathsList;
-import com.poratu.idea.plugins.tomcat.utils.PluginUtils;
+import ps.injae.idea.plugins.tomcat.utils.PluginUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.w3c.dom.Document;
@@ -125,7 +125,7 @@ public class TomcatCommandLineState extends JavaCommandLineState {
             FileUtil.createDirectory(workingPath.resolve("temp").toFile());
 
             updateServerConf(confPath, configuration);
-            createContextFile(tomcatVersion, module, confPath);
+            createContextFile(tomcatVersion, project, module, confPath);
             deleteTomcatWorkFiles(workingPath);
 
             ProjectRootManager manager = ProjectRootManager.getInstance(project);
@@ -196,7 +196,7 @@ public class TomcatCommandLineState extends JavaCommandLineState {
         PluginUtils.createTransformer().transform(new DOMSource(doc), new StreamResult(serverXml.toFile()));
     }
 
-    private void createContextFile(String tomcatVersion, Module module, Path confPath)
+    private void createContextFile(String tomcatVersion, Project project, Module module, Path confPath)
             throws ParserConfigurationException, IOException, SAXException, TransformerException {
         String docBase = configuration.getDocBase();
         String contextPath = configuration.getContextPath();
@@ -214,7 +214,7 @@ public class TomcatCommandLineState extends JavaCommandLineState {
 
         contextRoot.setAttribute("docBase", docBase);
 
-        collectResources(doc, contextRoot, module, tomcatVersion);
+        collectResources(doc, contextRoot, project, module, tomcatVersion);
         doc.appendChild(contextRoot);
 
         StringWriter writer = new StringWriter();
@@ -252,10 +252,10 @@ public class TomcatCommandLineState extends JavaCommandLineState {
         }
     }
 
-    private void collectResources(Document doc, Element contextRoot, Module module, String tomcatVersion) {
+    private void collectResources(Document doc, Element contextRoot, Project project, Module module, String tomcatVersion) {
         String majorVersionStr = tomcatVersion.split("\\.")[0];
         int majorVersion = Integer.parseInt(majorVersionStr);
-        PathsList pathsList = OrderEnumerator.orderEntries(module)
+        PathsList pathsList = OrderEnumerator.orderEntries(project)
                 .withoutSdk().runtimeOnly().productionOnly().getPathsList();
 
         if (pathsList.isEmpty()) {

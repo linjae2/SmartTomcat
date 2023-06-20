@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.conf;
+package ps.injae.idea.plugins.tomcat.conf;
 
 import com.intellij.execution.configurations.RunConfiguration;
 import com.intellij.execution.configurations.SimpleConfigurationType;
@@ -20,7 +20,7 @@ public class TomcatRunConfigurationType extends SimpleConfigurationType {
 
     protected TomcatRunConfigurationType() {
         super("com.poratu.idea.plugins.tomcat",
-                "Smart Tomcat",
+                "injae Tomcat",
                 "Configuration to run Tomcat server",
                 NotNullLazyValue.createValue(() -> TOMCAT_ICON));
     }

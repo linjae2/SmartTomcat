@@ -1,4 +1,4 @@
-rootProject.name = "SmartTomcat"
+rootProject.name = "InjaeTomcat"
 //systemProp.system=systemValue
 
 

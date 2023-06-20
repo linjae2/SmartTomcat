@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.conf;
+package ps.injae.idea.plugins.tomcat.conf;
 
 import com.intellij.application.options.ModulesComboBox;
 import com.intellij.execution.configuration.EnvironmentVariablesTextFieldWithBrowseButton;
@@ -23,9 +23,9 @@ import com.intellij.ui.components.fields.ExtendableTextComponent;
 import com.intellij.ui.components.fields.ExtendableTextField;
 import com.intellij.util.Function;
 import com.intellij.util.ui.FormBuilder;
-import com.poratu.idea.plugins.tomcat.setting.TomcatInfo;
-import com.poratu.idea.plugins.tomcat.setting.TomcatServerManagerState;
-import com.poratu.idea.plugins.tomcat.utils.PluginUtils;
+import ps.injae.idea.plugins.tomcat.setting.TomcatInfo;
+import ps.injae.idea.plugins.tomcat.setting.TomcatServerManagerState;
+import ps.injae.idea.plugins.tomcat.utils.PluginUtils;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

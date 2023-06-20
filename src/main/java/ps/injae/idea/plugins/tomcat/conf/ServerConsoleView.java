@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.conf;
+package ps.injae.idea.plugins.tomcat.conf;
 
 import com.intellij.execution.impl.ConsoleViewImpl;
 import com.intellij.execution.ui.ConsoleViewContentType;

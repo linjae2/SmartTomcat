@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.conf;
+package ps.injae.idea.plugins.tomcat.conf;
 
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SettingsEditor;

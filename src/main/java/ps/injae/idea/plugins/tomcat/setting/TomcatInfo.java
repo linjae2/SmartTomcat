@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.setting;
+package ps.injae.idea.plugins.tomcat.setting;
 
 import java.io.Serializable;
 import java.util.Objects;

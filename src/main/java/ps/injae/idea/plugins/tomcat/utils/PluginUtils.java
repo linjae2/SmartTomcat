@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.utils;
+package ps.injae.idea.plugins.tomcat.utils;
 
 import com.intellij.execution.Location;
 import com.intellij.openapi.fileChooser.FileChooser;
@@ -17,10 +17,10 @@ import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.openapi.vfs.VfsUtil;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.util.ArrayUtil;
-import com.poratu.idea.plugins.tomcat.conf.TomcatRunConfiguration;
-import com.poratu.idea.plugins.tomcat.setting.TomcatInfo;
-import com.poratu.idea.plugins.tomcat.setting.TomcatServerManagerState;
-import com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable;
+import ps.injae.idea.plugins.tomcat.conf.TomcatRunConfiguration;
+import ps.injae.idea.plugins.tomcat.setting.TomcatInfo;
+import ps.injae.idea.plugins.tomcat.setting.TomcatServerManagerState;
+import ps.injae.idea.plugins.tomcat.setting.TomcatServersConfigurable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

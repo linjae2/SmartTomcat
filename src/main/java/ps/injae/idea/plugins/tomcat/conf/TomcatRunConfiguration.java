@@ -1,4 +1,4 @@
-package com.poratu.idea.plugins.tomcat.conf;
+package ps.injae.idea.plugins.tomcat.conf;
 
 import com.intellij.configurationStore.XmlSerializer;
 import com.intellij.diagnostic.logging.LogConfigurationPanel;
@@ -28,9 +28,9 @@ import com.intellij.openapi.util.WriteExternalException;
 import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.util.xmlb.XmlSerializerUtil;
-import com.poratu.idea.plugins.tomcat.setting.TomcatInfo;
-import com.poratu.idea.plugins.tomcat.setting.TomcatServerManagerState;
-import com.poratu.idea.plugins.tomcat.utils.PluginUtils;
+import ps.injae.idea.plugins.tomcat.setting.TomcatInfo;
+import ps.injae.idea.plugins.tomcat.setting.TomcatServerManagerState;
+import ps.injae.idea.plugins.tomcat.utils.PluginUtils;
 import org.jdom.Element;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

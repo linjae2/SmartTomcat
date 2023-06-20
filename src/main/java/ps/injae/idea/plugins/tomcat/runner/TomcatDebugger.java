@@ -1,9 +1,9 @@
-package com.poratu.idea.plugins.tomcat.runner;
+package ps.injae.idea.plugins.tomcat.runner;
 
 import com.intellij.debugger.impl.GenericDebuggerRunner;
 import com.intellij.execution.configurations.RunProfile;
 import com.intellij.execution.executors.DefaultDebugExecutor;
-import com.poratu.idea.plugins.tomcat.conf.TomcatRunConfiguration;
+import ps.injae.idea.plugins.tomcat.conf.TomcatRunConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 /**
